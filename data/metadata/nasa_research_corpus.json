@@ -1,0 +1,107 @@
+[
+  {
+    "doc_id": "HRP-HAZARD-01-RADIATION",
+    "title": "NASA HRP Hazard 1: Space Radiation Risks in Deep-Space Exploration",
+    "source_org": "NASA Human Research Program (HRP) / Human Research Roadmap",
+    "publication_year": 2024,
+    "url": "https://humanresearchroadmap.nasa.gov/",
+    "hazard_category": "Space Radiation",
+    "verified_reference": "NASA Human Research Roadmap — Space Radiation Element Evidence Summary",
+    "abstract": "Overview of galactic cosmic rays (GCRs), solar particle events (SPEs), and trapped radiation exposure beyond Low Earth Orbit, including biological risks and spacecraft dosimetry context.",
+    "chunks": [
+      "Beyond Earth's protective magnetosphere in deep space, astronauts are exposed to continuous Galactic Cosmic Rays (GCRs) composed of high-energy protons and high-atomic-number-and-energy (HZE) ions, alongside episodic Solar Particle Events (SPEs) capable of delivering acute radiation doses.",
+      "NASA's Human Research Program categorizes Space Radiation risks across four domains: radiation carcinogenesis, acute and late central nervous system (CNS) alterations affecting cognition and motor performance, degenerative tissue effects including cardiovascular remodeling, and acute radiation syndrome during unshielded SPE exposure.",
+      "Spacecraft cabin dosimetry measures absorbed and effective dose rates (commonly tracked in mSv/day). While environmental radiation monitors quantify external and intravehicular particle flux, wearable physiological metrics such as heart rate or SpO2 do not directly measure absorbed radiation dose; rather, longitudinal multi-omics studies (such as OSDR OSD-569/571) investigate cellular DNA damage and immune recovery alongside dosimetry."
+    ]
+  },
+  {
+    "doc_id": "HRP-HAZARD-02-ISOLATION",
+    "title": "NASA HRP Hazard 2: Isolation, Confinement, and Behavioral Health",
+    "source_org": "NASA Human Research Program — Behavioral Health and Performance (BHP)",
+    "publication_year": 2024,
+    "url": "https://humanresearchroadmap.nasa.gov/",
+    "hazard_category": "Isolation and Confinement",
+    "verified_reference": "NASA HRP Behavioral Health and Performance Evidence Reports",
+    "abstract": "Examines circadian misalignment, sleep loss, mood shifts, cognitive fatigue, and interpersonal stress during prolonged isolated and confined spaceflight.",
+    "chunks": [
+      "Long-duration exploration crews operate inside small, acoustically noisy, artificially lit habitats for months to years while separated from Earth, family, and natural circadian cues. NASA HRP identifies sleep loss, circadian desynchronization, and behavioral stress as primary operational risks.",
+      "Evidence from International Space Station missions and ground analogs (such as HERA and Antarctic winter-over stations) indicates that shortened sleep duration, fragmented sleep architecture, and sustained workload can compound subjective stress and mood decrements.",
+      "Autonomous monitoring systems track individual longitudinal baselines for sleep duration, sleep efficiency, subjective stress logs, and mood logs rather than applying rigid population norms, allowing early recognition of multi-day personal baseline drift without issuing clinical psychiatric diagnoses."
+    ]
+  },
+  {
+    "doc_id": "HRP-HAZARD-03-DISTANCE",
+    "title": "NASA HRP Hazard 3: Distance from Earth & Autonomous Medical Capability",
+    "source_org": "NASA Human Research Program — Exploration Medical Capability (ExMC)",
+    "publication_year": 2024,
+    "url": "https://humanresearchroadmap.nasa.gov/",
+    "hazard_category": "Distance from Earth",
+    "verified_reference": "NASA HRP Exploration Medical Capability (ExMC) Risk Framework",
+    "abstract": "Addresses communication latency, lack of emergency evacuation or rapid resupply, and the necessity for onboard autonomous medical decision-support.",
+    "chunks": [
+      "As human missions move from Low Earth Orbit to cislunar space and Mars, one-way light-time communication delays grow from ~1.3 seconds at the Moon to up to ~22 minutes at Mars opposition, alongside periodic solar conjunction blackouts and zero rapid evacuation capability.",
+      "NASA's Exploration Medical Capability (ExMC) emphasizes that deep-space crews must transition from Earth-dependent telemedicine toward Earth-independent onboard clinical decision support capable of operating fully offline with local compute and local reference knowledge.",
+      "Autonomous onboard decision-support systems must clearly communicate data provenance, missing information, and statistical uncertainty so crew medical officers can make informed judgments rather than relying on opaque black-box alerts."
+    ]
+  },
+  {
+    "doc_id": "HRP-HAZARD-04-GRAVITY",
+    "title": "NASA HRP Hazard 4: Altered Gravity Fields & Physiological Adaptation",
+    "source_org": "NASA Human Research Program — Human Health Countermeasures",
+    "publication_year": 2024,
+    "url": "https://humanresearchroadmap.nasa.gov/",
+    "hazard_category": "Gravity Fields",
+    "verified_reference": "NASA HRP Cardiovascular, Bone, Muscle & Sensorimotor Evidence Summaries",
+    "abstract": "Covers microgravity and partial-gravity physiological adaptation including fluid shifts, cardiovascular deconditioning, muscle atrophy, bone loss, and countermeasure exercise.",
+    "chunks": [
+      "Transitions across hypergravity during launch/entry, prolonged microgravity in transit, and partial gravity (approximately 0.16g lunar and 0.38g Martian) induce cephalad fluid redistribution, plasma volume reduction, aerobic deconditioning, skeletal unloading, and sensorimotor vestibular disorientation.",
+      "To mitigate cardiovascular and musculoskeletal deconditioning, ISS crew members perform structured daily resistive and aerobic countermeasures using equipment such as the Advanced Resistive Exercise Device (ARED), Cycle Ergometer with Vibration Isolation and Stabilization (CEVIS), and T2 treadmill.",
+      "Tracking longitudinal resting heart rate trends alongside daily physical activity minutes and exercise modality helps contextualize cardiovascular adaptation relative to each astronaut's personal baseline, though wearable vital signs alone cannot directly measure bone mineral density or intracranial pressure."
+    ]
+  },
+  {
+    "doc_id": "HRP-HAZARD-05-ENVIRONMENT",
+    "title": "NASA HRP Hazard 5: Hostile, Closed Environments & Cabin Life Support",
+    "source_org": "NASA Human Research Program & OSDR Environmental Data Application",
+    "publication_year": 2024,
+    "url": "https://osdr.nasa.gov/",
+    "hazard_category": "Hostile and Closed Environments",
+    "verified_reference": "NASA OSDR Environmental Data Application (EDA) & HRP Immunology/Toxicology Reports",
+    "abstract": "Explains spacecraft closed-loop atmosphere monitoring (CO2, O2, temperature, humidity, pressure), immune dysregulation, and habitat-physiology coupling.",
+    "chunks": [
+      "Spacecraft habitats are closed artificial ecosystems with recirculated air and water, trace volatile compounds, microbial biofilms, and localized carbon dioxide accumulation pockets where natural convective mixing is absent in microgravity.",
+      "NASA's OSDR Environmental Data Application (EDA) tracks spacecraft environmental telemetry streams including ambient temperature (°C), relative humidity (%), carbon dioxide (CO2) levels, and radiation dosimetry across missions.",
+      "Elevated cabin CO2 concentrations in closed habitats are associated in aerospace literature with subjective headache, cognitive sluggishness, and altered respiratory drive, making multivariable correlation between cabin CO2, SpO2, resting heart rate, and sleep quality valuable for environmental-physiological anomaly triage—while requiring direct ECLSS sensor verification before operational action."
+    ]
+  },
+  {
+    "doc_id": "OSDR-INSPIRATION4-MULTIOMICS",
+    "title": "NASA OSDR Inspiration4 Longitudinal Human Multi-Omics Studies (OSD-569, OSD-570, OSD-571, OSD-575)",
+    "source_org": "NASA Open Science Data Repository (OSDR)",
+    "publication_year": 2024,
+    "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-569",
+    "hazard_category": "Cross-Hazard Multi-Omics",
+    "verified_reference": "NASA OSDR Studies OSD-569, OSD-570, OSD-571, OSD-575",
+    "abstract": "Summarizes FAIR-compliant open science multi-omics profiling of four civilian astronauts before, during/after, and following the September 2021 Inspiration4 orbital spaceflight.",
+    "chunks": [
+      "The SpaceX Inspiration4 mission (September 2021) contributed landmark human spaceflight biological datasets to NASA OSDR, including whole blood profiling (OSD-569), PBMC single-cell multiome assays (OSD-570), plasma proteomics/metabolomics/cfRNA (OSD-571), and serum metabolic and cytokine panels (OSD-575).",
+      "Key methodological lessons from OSDR Inspiration4 datasets highlight the importance of comparing post-flight measurements against each individual subject's pre-flight longitudinal baseline rather than solely relying on population averages, as inter-individual biological variance is substantial.",
+      "While processed expression and biomarker matrices are publicly discoverable through OSDR and GLOpenAPI, raw human genomic sequences (WGS/FASTQ) remain under controlled access to protect astronaut genetic privacy—demonstrating why local privacy-preserving storage is mandatory for operational crew health systems."
+    ]
+  },
+  {
+    "doc_id": "LSDA-NLSP-GOVERNANCE",
+    "title": "NASA Life Sciences Data Archive (LSDA / NLSP) & Data Provenance Standards",
+    "source_org": "NASA Life Sciences Portal (NLSP) / Johnson Space Center",
+    "publication_year": 2024,
+    "url": "https://nlsp.nasa.gov/",
+    "hazard_category": "Data Governance & Provenance",
+    "verified_reference": "NASA Life Sciences Data Archive / NLSP Data Access Framework",
+    "abstract": "Documents human physiological archive governance, de-identification, and why synthetic benchmarks must remain strictly separated from verified flight data.",
+    "chunks": [
+      "The NASA Life Sciences Data Archive (LSDA), now integrated with the NASA Life Sciences Portal (NLSP), curates de-identified physiological, sleep, cardiovascular, and behavioral research data from historical and ISS spaceflight missions alongside ground-analog campaigns.",
+      "Because identifiable human flight medical records are protected by privacy laws and institutional review board (IRB) agreements, unauthenticated public bulk access to continuous individual astronaut vital-sign streams is unavailable.",
+      "Consequently, decision-support prototypes developed outside authorized flight surgeon channels must label any demonstration time-series explicitly as SYNTHETIC and strictly prohibit mixing simulated values with verified NASA OSDR or LSDA records."
+    ]
+  }
+]

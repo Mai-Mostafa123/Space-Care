@@ -1,0 +1,26 @@
+# Core API & Validation
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+pydantic==2.10.3
+pydantic-settings==2.6.1
+sqlalchemy==2.0.36
+python-multipart==0.0.19
+
+# Data Science & Machine Learning (CPU-compatible, lightweight for 8 GB RAM)
+numpy==1.26.4
+pandas==2.2.3
+scikit-learn==1.5.2
+joblib==1.4.2
+
+# Local AI & RAG (Ollama + ChromaDB)
+httpx==0.28.1
+chromadb==0.5.23
+
+# Local Offline Speech-to-Text (choose one; faster-whisper tiny/base runs comfortably on CPU in <1 GB RAM)
+faster-whisper==1.1.0
+# Optional lightweight alternative for low-RAM offline systems:
+# vosk==0.3.45
+
+# Testing
+pytest==8.3.4
+pytest-cov==6.0.0

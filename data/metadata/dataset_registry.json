@@ -1,0 +1,196 @@
+[
+  {
+    "dataset_identifier": "OSD-569",
+    "name": "Whole Blood Measurements from the SpaceX Inspiration4 Mission",
+    "original_source": "NASA Open Science Data Repository (OSDR) / TRISH / Weill Cornell Medicine",
+    "source_classification": "REAL",
+    "variables": [
+      "RNA-seq gene expression counts",
+      "Epitranscriptomic profiles",
+      "Clonal hematopoiesis markers",
+      "Complete Blood Count (CBC) panels",
+      "WGS metadata (controlled)"
+    ],
+    "file_format": "ISA-Tab, TSV/CSV count matrices, MultiQC HTML",
+    "record_count": "Multi-timepoint assays across 4 crew",
+    "subject_count": 4,
+    "time_coverage": "September 2021 (Pre-flight, R+1, Recovery)",
+    "accessibility": "Processed tables open; raw human WGS/FASTQ controlled-access",
+    "download_or_api_method": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-569 | GLOpenAPI REST",
+    "license_info": "NASA Open Science FAIR policy (human genomic access restrictions apply)",
+    "relevance_notes": "Demonstrates pre-flight baseline vs. post-flight hematologic and transcriptomic shifts in civilian astronauts.",
+    "limitations": "3-day LEO mission; no continuous wearable vital-sign time series."
+  },
+  {
+    "dataset_identifier": "OSD-570",
+    "name": "Inspiration4 Peripheral Blood Mononuclear Cells (PBMCs) Single-Cell Multiome",
+    "original_source": "NASA Open Science Data Repository (OSDR)",
+    "source_classification": "REAL",
+    "variables": [
+      "Single-nuclei RNA-seq",
+      "Single-nuclei ATAC-seq",
+      "T-cell and B-cell receptor repertoires"
+    ],
+    "file_format": "ISA-Tab, H5AD, MTX, TSV",
+    "record_count": "Single-cell multiome matrices across 4 crew",
+    "subject_count": 4,
+    "time_coverage": "September 2021 (Pre-flight, Return, Recovery)",
+    "accessibility": "Processed summary matrices open; raw sequencing controlled",
+    "download_or_api_method": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-570 | GLOpenAPI REST",
+    "license_info": "NASA Open Science FAIR policy",
+    "relevance_notes": "Documents spaceflight-associated immune cell chromatin and transcriptional remodeling.",
+    "limitations": "Discrete blood draw timepoints rather than continuous onboard telemetry."
+  },
+  {
+    "dataset_identifier": "OSD-571",
+    "name": "Inspiration4 Blood Plasma Proteomics, Metabolomics, and Cell-Free Nucleic Acids",
+    "original_source": "NASA Open Science Data Repository (OSDR)",
+    "source_classification": "REAL",
+    "variables": [
+      "Plasma proteomics",
+      "Plasma metabolomics",
+      "Extracellular vesicle profiles",
+      "cfDNA and cfRNA sequencing"
+    ],
+    "file_format": "ISA-Tab, CSV/TSV",
+    "record_count": "Longitudinal plasma profiles across 4 crew",
+    "subject_count": 4,
+    "time_coverage": "September 2021",
+    "accessibility": "Open processed tables via OSDR",
+    "download_or_api_method": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-571 | GLOpenAPI REST",
+    "license_info": "NASA Open Science FAIR policy",
+    "relevance_notes": "Captures systemic metabolic and cell-free stress biomarkers during orbital adaptation.",
+    "limitations": "Short-duration LEO mission; biospecimen assay cadence only."
+  },
+  {
+    "dataset_identifier": "OSD-575",
+    "name": "Inspiration4 Blood Serum Metabolic Panels and Immune/Cardiovascular Cytokines",
+    "original_source": "NASA Open Science Data Repository (OSDR)",
+    "source_classification": "REAL",
+    "variables": [
+      "Comprehensive metabolic panels",
+      "Immune cytokine arrays",
+      "Cardiovascular biomarker panels"
+    ],
+    "file_format": "ISA-Tab, CSV/TSV",
+    "record_count": "Serum panels across 4 crew",
+    "subject_count": 4,
+    "time_coverage": "September 2021",
+    "accessibility": "Open processed tables via OSDR",
+    "download_or_api_method": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-575 | GLOpenAPI REST",
+    "license_info": "NASA Open Science FAIR policy",
+    "relevance_notes": "Provides empirical immune and cardiovascular biomarker context for closed-environment adaptation.",
+    "limitations": "Not continuous real-time heart rate or SpO2 monitoring."
+  },
+  {
+    "dataset_identifier": "OSDR-EDA",
+    "name": "NASA OSDR Environmental Data Application (ISS Habitat Telemetry)",
+    "original_source": "NASA Ames Life Sciences Data Archive (ALSDA) / OSDR",
+    "source_classification": "REAL",
+    "variables": [
+      "Temperature (°C)",
+      "Relative Humidity (%)",
+      "Carbon Dioxide (CO2 ppm / mmHg)",
+      "Radiation Dosimetry (where instrumented)"
+    ],
+    "file_format": "Structured CSV / JSON time-series",
+    "record_count": "Mission-indexed time-series (varies by study)",
+    "subject_count": 0,
+    "time_coverage": "Multi-mission ISS increments (typically 30-90+ days)",
+    "accessibility": "Open public research access via OSDR EDA portal",
+    "download_or_api_method": "https://osdr.nasa.gov/ (EDA subsystem & OSDR REST API)",
+    "license_info": "NASA Open Science Policy",
+    "relevance_notes": "Defines real-world spacecraft environmental monitoring schemas for CO2, thermal, humidity, and radiation tracking.",
+    "limitations": "Payload/habitat telemetry rather than personal wearable astronaut physiology."
+  },
+  {
+    "dataset_identifier": "LSDA-NLSP",
+    "name": "NASA Life Sciences Data Archive / NASA Life Sciences Portal",
+    "original_source": "NASA Johnson Space Center & Ames Research Center",
+    "source_classification": "REAL",
+    "variables": [
+      "De-identified cardiovascular, musculoskeletal, sleep, and behavioral experiment records",
+      "Ground-analog bed-rest physiology"
+    ],
+    "file_format": "Structured archive packages (experiment-specific)",
+    "record_count": "Historical Shuttle, ISS, and analog mission archives",
+    "subject_count": null,
+    "time_coverage": "Mercury through ISS eras",
+    "accessibility": "Catalog public; human physiological datasets require formal NASA Data Request & IRB governance",
+    "download_or_api_method": "https://nlsp.nasa.gov/ | https://lsda.jsc.nasa.gov/",
+    "license_info": "NASA Human Research Privacy & Data Use Agreement",
+    "relevance_notes": "Primary NASA archive for longitudinal human spaceflight physiology and sleep/behavioral studies.",
+    "limitations": "Restricted access for individual human physiological records; not bundled unauthenticated."
+  },
+  {
+    "dataset_identifier": "NASA-HRR",
+    "name": "NASA Human Research Roadmap & HRP Evidence Reports",
+    "original_source": "NASA Human Research Program (HRP)",
+    "source_classification": "REAL",
+    "variables": [
+      "Five Spaceflight Hazards taxonomy",
+      "Integrated Research Plan (IRP) risks and gaps",
+      "Peer-reviewed Evidence Reports"
+    ],
+    "file_format": "HTML / PDF Evidence Reports",
+    "record_count": "Curated HRP Risk & Evidence corpus",
+    "subject_count": null,
+    "time_coverage": "Continuously updated (ISS & Artemis Moon-to-Mars)",
+    "accessibility": "Open public access",
+    "download_or_api_method": "https://humanresearchroadmap.nasa.gov/",
+    "license_info": "U.S. Government Public Domain (NASA)",
+    "relevance_notes": "Authoritative scientific grounding for the five hazards, physiological mechanisms, and medical autonomy requirements.",
+    "limitations": "Narrative evidence reports and risk matrices rather than raw patient-level telemetry."
+  },
+  {
+    "dataset_identifier": "AEGIS-SYNTH-30D",
+    "name": "Aegis 30-Day Synthetic Crew & Habitat Telemetry Benchmark",
+    "original_source": "Aegis Orbital Health Deterministic Generator (scripts/generate_synthetic_data.py)",
+    "source_classification": "SIMULATED",
+    "variables": [
+      "heart_rate_bpm",
+      "spo2_pct",
+      "sleep_duration_hrs",
+      "deep_sleep_hrs",
+      "rem_sleep_hrs",
+      "activity_minutes",
+      "stress_score",
+      "mood_score",
+      "radiation_msv_day",
+      "cabin_co2_ppm",
+      "oxygen_pct",
+      "temperature_c",
+      "humidity_pct",
+      "pressure_kpa"
+    ],
+    "file_format": "JSON / CSV / SQLite (SYNTHETIC tagged)",
+    "record_count": "90 daily crew health records + 90 habitat environmental records (30 days x 3 synthetic profiles)",
+    "subject_count": 3,
+    "time_coverage": "30-day simulated deep-space transit window",
+    "accessibility": "Bundled locally for offline development, ML benchmarking, and demonstration",
+    "download_or_api_method": "Local file: data/synthetic/synthetic_benchmark_30d.json",
+    "license_info": "Apache-2.0 (Synthetic Benchmark Only — Not Real Astronaut Data)",
+    "relevance_notes": "Enables offline personal-baseline ML training, multivariable Isolation Forest evaluation, and anomaly explanation testing.",
+    "limitations": "Programmatically generated synthetic values with labeled injected perturbations; must never be interpreted as real clinical or NASA flight data."
+  },
+  {
+    "dataset_identifier": "CREW-MANUAL",
+    "name": "Operator Manual & Voice-Confirmed Mission Logs",
+    "original_source": "Local Crew / Flight Surgeon Workstation Input",
+    "source_classification": "MANUAL",
+    "variables": [
+      "Astronaut profile updates",
+      "Manual vital/mood/stress entries",
+      "Voice-to-Structured-JSON confirmed logs"
+    ],
+    "file_format": "SQLite relational rows (MANUAL tagged)",
+    "record_count": "Dynamic operator-entered records",
+    "subject_count": null,
+    "time_coverage": "Active local mission session",
+    "accessibility": "Local SQLite only (never uploaded externally)",
+    "download_or_api_method": "Local API (/api/astronauts, /api/health, /api/voice)",
+    "license_info": "Local Mission Data Privacy Policy",
+    "relevance_notes": "Captures operator-verified inputs and voice-extracted structured observations with explicit confirmation.",
+    "limitations": "Depends on operator adherence and microphone transcription verification."
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "name": "Aegis Orbital Health",
+  "description": "Autonomous astronaut physiological monitoring, personal baseline anomaly detection, and offline NASA research decision-support platform.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
