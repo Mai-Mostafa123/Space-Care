@@ -1,10 +1,9 @@
 import express from 'express';
 import path from 'node:path';
-import { createServer as createViteServer } from 'vite';
-import { db, DB_PATH, initDatabase, seedDatabaseIfEmpty, utcNowIso } from './server/db.js';
-import { evaluateSyntheticBenchmark, runAnomalyDetectionForAstronaut } from './server/ml.js';
-import { checkLocalOllamaStatus, queryGroundedAssistant } from './server/rag.js';
-import { extractStructuredFromTranscript } from './server/voice.js';
+import { db, DB_PATH, initDatabase, seedDatabaseIfEmpty, utcNowIso } from './server/db.ts';
+import { evaluateSyntheticBenchmark, runAnomalyDetectionForAstronaut } from './server/ml.ts';
+import { checkLocalOllamaStatus, queryGroundedAssistant } from './server/rag.ts';
+import { extractStructuredFromTranscript } from './server/voice.ts';
 
 export function createApp() {
   initDatabase();
@@ -552,9 +551,10 @@ export function createApp() {
 
 async function startServer() {
   const app = createApp();
-  const port = 3000;
+  const port = Number(process.env.PORT) || 3000;
 
   if (process.env.NODE_ENV !== 'production') {
+    const { createServer: createViteServer } = await import('vite');
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: 'spa',
@@ -562,6 +562,7 @@ async function startServer() {
     app.use(vite.middlewares);
   } else {
     const distDir = path.resolve(process.cwd(), 'dist');
+    app.use('/src/assets', express.static(path.resolve(process.cwd(), 'src', 'assets')));
     app.use(express.static(distDir));
     app.get('*', (_req, res) => {
       res.sendFile(path.join(distDir, 'index.html'));
@@ -569,7 +570,7 @@ async function startServer() {
   }
 
   app.listen(port, '0.0.0.0', () => {
-    console.log(`Aegis Orbital Health preview server running on http://0.0.0.0:${port}`);
+    console.log(`Aegis Orbital Health server running on http://0.0.0.0:${port}`);
   });
 }
 

@@ -1,8 +1,8 @@
 // @vitest-environment node
 import { describe, expect, it } from 'vitest';
-import { extractStructuredFromTranscript } from './voice.js';
-import { evaluateSyntheticBenchmark } from './ml.js';
-import { createApp } from '../server.js';
+import { extractStructuredFromTranscript } from './voice.ts';
+import { evaluateSyntheticBenchmark } from './ml.ts';
+import { createApp } from '../server.ts';
 
 describe('Aegis Orbital Health — Full Audit API, ML, Security, Voice & RAG Suite', () => {
   it('extracts structured health & profile fields from voice transcripts and requires confirmation', () => {

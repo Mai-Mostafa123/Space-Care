@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { db } from './db.js';
+import { db } from './db.ts';
 
 export const MANDATORY_UNCERTAINTY_STATEMENT =
   "Decision-support statistical notice: This alert reflects deviation from this astronaut's own historical baseline rather than a clinical threshold or medical diagnosis. Sensor artifacts, recent EVA workload, or environmental telemetry lags can influence scores; verify raw vitals and habitat ECLSS readings before action.";

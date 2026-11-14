@@ -1,4 +1,4 @@
-import { db, utcNowIso } from './db.js';
+import { db, utcNowIso } from './db.ts';
 
 interface ResearchDocRow {
   doc_id: string;
